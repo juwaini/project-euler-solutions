@@ -1,12 +1,3 @@
-def fibo_number(term):
-    if term == 0:
-        return 1
-    elif term == 1:
-        return 2
-    else:
-        return
-
-
 def is_even(x):
     if x % 2 == 0:
         return True
@@ -14,4 +5,12 @@ def is_even(x):
         return False
 
 if __name__ == '__main__':
+    fibo_number = [1, 2]
+    while fibo_number[-1] <= 4000000:
+        fibo_number.append(fibo_number[-1] + fibo_number[-2])
+
     total = 0
+    for fn in fibo_number:
+        if is_even(fn):
+            total += fn
+    print("The sum of even-valued fibo number that less than 4 million is: %d" % total)
