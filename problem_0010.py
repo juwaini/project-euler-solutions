@@ -1,10 +1,13 @@
+from problem_0003 import is_prime
 
+
+def sum_of_all_primes_below_n(n):
+    total = 0
+    for i in range(2, n+1):
+        if is_prime(i):
+            total += i
+    return total
 
 if __name__ == '__main__':
-    for c in range(1000, 1, -1):
-        for b in range(c-1, 1, -1):
-            for a in range(b-1, 1, -1):
-                if (a + b +c == 1000) and (a*a + b*b == c*c):
-                    print('%d + %d + %d = 1000' % (a, b, c))
-                    print('%d^2 + %d^2 = %d^2' % (a, b, c))
-                    print('a*b*c == ', a*b*c)
+    print('Sum of all primes under 10 is %d.' % sum_of_all_primes_below_n(10))
+    print('Sum of all primes under 2_000_000 is %d.' % sum_of_all_primes_below_n(2_000_000))
