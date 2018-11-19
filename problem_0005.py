@@ -1,16 +1,16 @@
-
-
 def is_divisible_by_1_to_10(n):
     for x in range(1, 11):
         if n % x != 0:
             return False
     return True
 
+
 def is_divisible_by_1_to_20(n):
     for x in range(1, 21):
         if n % x != 0:
             return False
     return True
+
 
 if __name__ == '__main__':
     i = 11

@@ -1,5 +1,3 @@
-
-
 def get_biggest_product_of_n_adjacent_digit_in_s(s, n):
     biggest_product = []
     for i in range(0, len(s) - n):

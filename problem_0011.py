@@ -10,6 +10,7 @@ def get_max_sum_of_4_neighbouring_number_in_list(ls):
             sum_ls.append(ls[i] * ls[i+1] * ls[i+2] * ls[i+3])
         return max(sum_ls)
 
+
 if __name__ == '__main__':
 
     file = open('files/problem_0011_20_by_20_grid', 'r')
@@ -20,7 +21,6 @@ if __name__ == '__main__':
             inner_list.append(int(number))
         matrix.append(inner_list)
         inner_list = []
-
 
     sum_horizontal = []
     for i in range(0, len(matrix)):
@@ -63,6 +63,5 @@ if __name__ == '__main__':
 
     max_diagonal_left = max(sum_diagonal_left)
     print('max_diagonal_left = ', max_diagonal_left)
-
 
     print('max = ', max(max_horizontal, max_vertical, max_diagonal_left))

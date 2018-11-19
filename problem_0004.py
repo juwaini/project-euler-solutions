@@ -11,6 +11,7 @@ def is_palindrome(s):
 def generate_product_as_string(x, y):
     return str(x*y)
 
+
 if __name__ == '__main__':
     palindrome_list = []
     for i in range(10, 100):

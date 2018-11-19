@@ -10,5 +10,6 @@ def get_the_nth_prime(n):
             print('prime[%d] is %d' % (count, num))
             count += 1
 
+
 if __name__ == '__main__':
     get_the_nth_prime(10001)
