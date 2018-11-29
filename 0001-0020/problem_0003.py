@@ -28,7 +28,7 @@ def get_prime_factors(n):
 
 if __name__ == '__main__':
     n = 13195
-    print("Prime factors for", n , " is ", get_prime_factors(n))
+    print("Prime factors for", n, " is ", get_prime_factors(n))
 
     c = 600851475143
     print("The biggest prime factors for", c, " is ", max(get_prime_factors(c)))
