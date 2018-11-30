@@ -1,6 +1,3 @@
-import pprint
-
-
 def convert_triangle(filename):
     example_list = []
     with open(filename) as file:
