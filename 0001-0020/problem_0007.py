@@ -1,4 +1,4 @@
-from problem_0003 import is_prime
+from .problem_0003 import is_prime
 
 
 def get_the_nth_prime(n):

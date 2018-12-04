@@ -1,4 +1,4 @@
-from problem_0003 import is_prime
+from .problem_0003 import is_prime
 
 
 def sum_of_all_primes_below_n(n):

@@ -1,5 +1,5 @@
 from math import sqrt
-from problem_0003 import is_prime
+from .problem_0003 import is_prime
 
 
 def generate_triangle_number(n):
