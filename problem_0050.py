@@ -17,4 +17,15 @@ def is_prime(n):
 
 
 if __name__ == '__main__':
-    print(primes_up_to(100))
+    primes_100 = primes_up_to(100)
+    total = 0
+    count = 0
+    flag = True
+
+    while flag:
+        if is_prime(sum(primes_100)):
+            print(f'{primes_100}: {sum(primes_100)} - {len(primes_100)}')
+            flag = False
+        else:
+            print(f'{primes_100}: {sum(primes_100)} - {len(primes_100)}')
+            primes_100.pop(-1)
