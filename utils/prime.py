@@ -11,3 +11,20 @@ def is_prime(x):
         if x % n == 0:
             return False
     return True
+
+
+def is_truncatable_prime(n):
+    length_n = len(str(n))
+    if length_n < 2:
+        return False
+
+    for i in range(length_n):
+        if not is_prime(int(str(n)[i:])):
+            return False
+
+    for i in range(length_n - 1):
+        # print(str(n)[:-(i + 1)])
+        if not is_prime(int(str(n)[:-(i + 1)])):
+            return False
+
+    return True
