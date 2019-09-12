@@ -1,5 +1,3 @@
-from problem_0032 import is_pandigital
-
 if __name__ == '__main__':
     all_prods = []
     for i in range(9233, 9488, 1):
